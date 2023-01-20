@@ -1,0 +1,117 @@
+body {
+    text-align: center;
+    background-image: url("img/bg.jpg");
+    background-size: 150px 150px;
+    margin: auto 0 !important;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   
+
+}
+
+#menu {
+    margin: auto 0;
+    height:40px;
+    width: 100%;
+    background-color: rgb(13, 13, 51);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#menu > ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    padding: 0px;
+    
+}
+
+#menu > ul > li {
+    display: inline-block;
+    height: 100%;
+}
+
+#menu > ul > li > a {
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    letter-spacing: 3px;
+    color: white;
+    height:100%;
+    background-color: rgb(13, 13, 51);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    box-sizing: border-box;
+    opacity: 0.5;
+    width: 150px;
+}
+
+#menu > ul > li > a:hover {
+    opacity: 1;
+}
+
+#slider {
+    height:50px;
+    background-color: rgb(13, 13, 51);
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#line {
+
+height:15px;
+width:15px;
+border-radius: 50%;
+background-color:white;
+margin-left:430px;
+filter: drop-shadow(0 0 20px black);
+animation: myanimation 500ms infinite;
+
+
+}
+
+#line.tointro {
+
+    margin-left:430px;
+    transition:600ms;
+}
+
+#line.toprojects {
+
+    margin-left:590px;
+    transition:600ms;
+}
+
+#line.toabout {
+
+    margin-left:760px;
+    transition:600ms;
+}
+
+#line.tocontact {
+
+    margin-left:920px;
+    transition:600ms;
+}
+
+@keyframes myanimation {
+
+0% {
+    transform: scale(1);
+}
+
+50% {
+    transform: scale(1.2);
+}
+
+100% {
+    transform: scale(1);
+}
+
+}
